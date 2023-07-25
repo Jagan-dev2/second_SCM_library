@@ -1,5 +1,6 @@
 import com.jagandev.builds.Calculator
 def call(Map PipelineParams){
+    library('com.jagandev.slb')
     Calculator calculator = new Calculator(this)
     pipeline{
     agent any
